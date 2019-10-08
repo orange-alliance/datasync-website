@@ -166,6 +166,9 @@ a {
   .wrapper-info {
     margin-left: 0;
   }
+  .buttons {
+    margin-left: -16px;
+  }
   .button, .outlined-button {
     font-size: 1em;
   }
