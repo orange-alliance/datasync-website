@@ -6,7 +6,7 @@ const buttonIcon = document.querySelector('#download-icon');
 if (platform === 'Win32') {
   downloadText.textContent += ' for Windows';
   buttonIcon.classList.add('icon-windows');
-} else if (navigator.userAgent.match(/linux/i)) {
+} else if (platform.startsWith('Linux') && !navigator.userAgent.match(/android/i)) {
   downloadText.textContent += ' for Linux';
   buttonIcon.classList.add('icon-linux');
 } else if (platform.startsWith('Mac')) {
